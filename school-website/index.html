@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ School - Excellence in Education</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">
+                    XYZ School
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-blue-600 font-semibold">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-cover bg-center" style="background-image: url('assets/images/background.jpg')">
+        <div class="bg-black bg-opacity-50">
+        <div class="container mx-auto px-6 py-20">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">Welcome to XYZ School</h1>
+                <p class="text-xl mb-8">Nurturing Minds, Building Futures</p>
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300">
+                    Enroll Now
+                </a>
+            </div>
+        </div>
+        <div class="h-32 bg-white" style="clip-path: polygon(0 60%, 100% 0, 100% 100%, 0% 100%);"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Academic Excellence -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-graduation-cap text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Academic Excellence</h3>
+                    <p class="text-gray-600">Committed to providing high-quality education with experienced faculty and modern facilities.</p>
+                </div>
+
+                <!-- Sports & Activities -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-running text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Sports & Activities</h3>
+                    <p class="text-gray-600">Comprehensive sports programs and extracurricular activities for holistic development.</p>
+                </div>
+
+                <!-- Innovation -->
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-lightbulb text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Innovation</h3>
+                    <p class="text-gray-600">State-of-the-art facilities and modern teaching methods for 21st-century learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest News & Events</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Annual Sports Day</h3>
+                        <p class="text-gray-600 mb-4">Join us for our annual sports day celebration featuring exciting competitions and activities.</p>
+                        <p class="text-blue-600">December 15, 2023</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Science Exhibition</h3>
+                        <p class="text-gray-600 mb-4">Students showcase their innovative science projects and experiments.</p>
+                        <p class="text-blue-600">January 10, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Education Street</p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@xyzschool.com</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400 transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 XYZ School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
