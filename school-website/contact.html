@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - XYZ School</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">
+                    XYZ School
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="contact.html" class="text-blue-600 font-semibold">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="pt-20 bg-blue-600">
+        <div class="container mx-auto px-6 py-16">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+                <p class="text-xl">We'd Love to Hear from You</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information & Form Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-8">Get in Touch</h2>
+                    
+                    <!-- Address -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4">School Address</h3>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-blue-600">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">
+                                    123 Education Street<br>
+                                    Cityville, State 12345<br>
+                                    United States
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Contact Details</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="text-blue-600">
+                                    <i class="fas fa-phone text-2xl"></i>
+                                </div>
+                                <p class="text-gray-600">(555) 123-4567</p>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="text-blue-600">
+                                    <i class="fas fa-envelope text-2xl"></i>
+                                </div>
+                                <p class="text-gray-600">info@xyzschool.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Office Hours -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Office Hours</h3>
+                        <div class="space-y-2 text-gray-600">
+                            <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
+                            <p>Saturday: 9:00 AM - 12:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-8">Send Us a Message</h2>
+                    <form id="contactForm" class="space-y-6">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Enter your full name">
+                            <span id="nameError" class="text-red-500 text-sm hidden">Please enter your name</span>
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Enter your email address">
+                            <span id="emailError" class="text-red-500 text-sm hidden">Please enter a valid email address</span>
+                        </div>
+
+                        <!-- Subject -->
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject *</label>
+                            <input type="text" id="subject" name="subject" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Enter message subject">
+                            <span id="subjectError" class="text-red-500 text-sm hidden">Please enter a subject</span>
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message *</label>
+                            <textarea id="message" name="message" required rows="5"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Enter your message"></textarea>
+                            <span id="messageError" class="text-red-500 text-sm hidden">Please enter your message</span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit"
+                                class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Education Street</p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@xyzschool.com</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-400 transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-400 transition duration-300">About</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-linkedin text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 XYZ School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
